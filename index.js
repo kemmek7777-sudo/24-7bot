@@ -100,5 +100,13 @@ client.on('interactionCreate', async interaction => {
         }
     }
 });
+// آلية حماية الذاكرة لضمان العمل 24/7 دون انقطاع
+setInterval(() => {
+    if (global.gc) {
+        global.gc();
+    }
+    // إعادة فحص اتصال الصوت وتنشيطه
+    connectToVoice();
+}, 15 * 60 * 1000); // تنظيف كل 15 دقيقة
 
 client.login(TOKEN);
