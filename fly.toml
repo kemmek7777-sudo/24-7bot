@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for 24-7bot on 2026-08-21T12:57:08Z
+# fly.toml app configuration file generated for 24-7bot on 2026-08-21T13:01:43Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = '24-7bot'
-primary_region = 'ams'
+primary_region = 'sin'
 
 [build]
 
