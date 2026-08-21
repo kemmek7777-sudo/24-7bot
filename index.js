@@ -1,5 +1,15 @@
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 8080;
 
+app.get('/', (req, res) => {
+    res.send('Bot is online 24/7!');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
