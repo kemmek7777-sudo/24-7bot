@@ -6,7 +6,7 @@ const client = new Client({
         GatewayIntentBits.GuildMembers
     ]
 });
-const TOKEN = 'MTQxODk2MDUyMzc0NzM5Nzc1NQ.GB5WAc.pE-vzV9BXjBoHsR2imgiEeA3v7JnEOmNJhGRbw';
+const TOKEN = process.env.DISCORD_TOKEN;
 const CLIENT_ID = '1418960523747397755';
 const GUILD_ID = '1320900808195178567';
 
